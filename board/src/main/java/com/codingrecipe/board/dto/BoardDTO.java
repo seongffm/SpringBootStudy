@@ -46,7 +46,7 @@ public class BoardDTO {
         boardDTO.setBoardCreatedTime(boardEntity.getCreatedTime());
         boardDTO.setBoardUpdatedTime(boardEntity.getUpdatedTime());
         if(boardEntity.getFileAttached()==0){
-            boardDTO.setFileAttached(boardDTO.getFileAttached());//0
+            boardDTO.setFileAttached(boardEntity.getFileAttached());//0
         }else{
             boardDTO.setFileAttached(boardEntity.getFileAttached());//1
             //파일 여러개 첨부시 리스트로
